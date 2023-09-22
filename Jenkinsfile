@@ -2,5 +2,4 @@
     stage('Demo') {
         installnginx
         echo 'here'
-    }    
-}
+ }
