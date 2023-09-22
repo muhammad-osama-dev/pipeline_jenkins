@@ -1,5 +1,16 @@
-@Library('sharedLibrary')_
-    stage('Demo') {
-        installnginx
-        echo 'here'
- }
+@Library('sharedLibrary') _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Demo') {
+            steps {
+                script {
+                    // Call the installNginx function from the shared library
+                    sharedLibrary.installNginx()
+                }
+            }
+        }
+    }
+}
