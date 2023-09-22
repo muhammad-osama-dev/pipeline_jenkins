@@ -8,7 +8,8 @@ pipeline {
             steps {
                 script {
                     // Call the installNginx function from the shared library
-                    installNginx
+                    sharedLibrary.call()
+
                 }
             }
         }
