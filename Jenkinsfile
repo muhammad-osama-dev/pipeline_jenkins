@@ -1,5 +1,5 @@
 @Library('sharedLibrary')_
     stage('Demo') {
-        installnginx
+        installnginx()
         echo 'here'
  }
